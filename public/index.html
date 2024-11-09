@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Library Management System</h1>
+
+    <!-- Message Box for Feedback -->
+    <div id="messageBox" class="message"></div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" style="display: none;">Loading...</div>
+
+    <!-- Add Book Form -->
+    <h2>Add or Update a Book</h2>
+    <form id="addBookForm">
+        <input type="text" id="bookTitle" placeholder="Title" required />
+        <input type="text" id="bookAuthor" placeholder="Author" required />
+        <input type="text" id="bookGenre" placeholder="Genre" required />
+        <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Search Book Form -->
+    <h2>Search Books</h2>
+    <form id="searchBookForm">
+        <input type="text" id="searchTitle" placeholder="Search by title" />
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Books List -->
+    <h2>Books List</h2>
+    <div id="searchResults"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
